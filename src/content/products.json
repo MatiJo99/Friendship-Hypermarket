@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "p1",
+      "image": "/assets/products/sofa.jpg",
+      "category": { "en": "Grocery", "am": "ግሮሰሪ" },
+      "name": { "en": "Different grocery items", "am": "የተለያዩ የምግብ ግብአቶች" }
+    },
+    {
+      "id": "p2",
+      "image": "/assets/products/tv-stand.jpg",
+      "category": { "en": "Furniture", "am": "የቤት ዕቃ" },
+      "name": { "en": "Modern home furniture", "am": "ዘመናዊ የቤት ዕቃዎች" }
+    },
+    {
+      "id": "p3",
+      "image": "/assets/products/bakery.jpg",
+      "category": { "en": "Cafe and Restaurant", "am": "ካፌ እና ሬስቶራንት" },
+      "name": { "en": "Fresh food", "am": "ትኩስ ምግቦች" }
+    },
+    {
+      "id": "p4",
+      "image": "/assets/products/appliances.jpg",
+      "category": { "en": "General Merchandise", "am": "አጠቃላይ ግብይት" },
+      "name": { "en": "Household essentials", "am": "የቤት መገልገያ ዕቃዎች" }
+    }
+  ]
+}

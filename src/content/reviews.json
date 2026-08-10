@@ -1,0 +1,166 @@
+{
+  "summary": {
+  "ratingOverride": 3.8,
+  "totalReviewsOverride": 167,
+  "distribution": {
+    "5": 60,
+    "4": 41,
+    "3": 27,
+    "2": 11,
+    "1": 17
+  }
+  },
+
+  "items": [
+    {
+      "id": "r01",
+      "name": "wegderes gudaey",
+      "date": "8 months ago",
+      "stars": 5,
+      "body": {
+        "en": "When you come here, you get everything, from cooking oil and furniture to different kinds of products.",
+        "am": "ወደዚህ ስትመጡ ከማብሰያ ዘይትና ከቤት ዕቃዎች ጀምሮ የተለያዩ ዓይነት ምርቶችን ሁሉ ማግኘት ይችላሉ።"
+      }
+    },
+    {
+      "id": "r02",
+      "name": "Shabnam Parween",
+      "date": "3 months ago",
+      "stars": 4,
+      "body": {
+        "en": "Nice collection and competitive prices. They should add more kitchen storage products.",
+        "am": "ጥሩ የምርት ምርጫ እና ተወዳዳሪ ዋጋ አላቸዉ። ተጨማሪ የኩሽና ዕቃዎችን ቢጨምሩ ጥሩ ነዉ።"
+      }
+    },
+    {
+      "id": "r03",
+      "name": "Peter Schmid",
+      "date": "4 months ago",
+      "stars": 4,
+      "body": {
+        "en": "Other than what was written here, I could also pay with Mastercard. They have a nice selection of Ethiopian coffee, spirits and wine.",
+        "am": "እዚህ ከተጻፈው በተጨማሪ በማስተርካርድ መክፈልም ችያለሁ። ጥሩ የኢትዮጵያ ቡና፣ ስፒሪቶች እና ወይን ምርጫ አላቸው።"
+      }
+    },
+    {
+      "id": "r04",
+      "name": "Nathnael Tekabe",
+      "date": "a year ago",
+      "stars": 5,
+      "body": {
+        "en": "They have good stuff.",
+        "am": "ጥሩ የሆኑ ዕቃዎች አሏቸው።"
+      }
+    },
+    {
+      "id": "r05",
+      "name": "Dan Grimstead",
+      "date": "3 months ago",
+      "stars": 4,
+      "body": {
+        "en": "Pretty good selection of items you might need.",
+        "am": "ሊያስፈልጉዎት የሚችሉ ዕቃዎች ጥሩ ምርጫ አላቸው።"
+      }
+    },
+    {
+      "id": "r06",
+      "name": "Emmanuel Toufexis",
+      "date": "4 months ago",
+      "stars": 5,
+      "body": {
+        "en": "A solid choice for an Ethiopian supermarket, close to Skylight Hotel. Happy staff and many products!",
+        "am": "ከስካይላይት ሆቴል አቅራቢያ የሚገኝ ጥሩ የኢትዮጵያ ሱፐርማርኬት ምርጫ ነው። አስደሳች ሠራተኞችና ብዙ ዓይነት ምርቶች አሉት!"
+      }
+    },
+    {
+      "id": "r07",
+      "name": "Md. Jamshed Ali",
+      "date": "a year ago",
+      "stars": 5,
+      "body": {
+        "en": "It's a very big hypermarket with various branches in Addis Ababa. It has all kinds of general store items as well as imported products. It's one of the best options for shopping because of its diverse range of products.",
+        "am": "በአዲስ አበባ የተለያዩ ቅርንጫፎች ያሉት በጣም ትልቅ ሃይፐርማርኬት ነው። የተለያዩ የጠቅላላ ሱቅ ዕቃዎችን እንዲሁም ከውጭ የሚገቡ ምርቶችን አለዉ። በምርቶቹ ልዩ ልዩ ምርጫ ምክንያት ለግብይት ከሚመከሩ ቦታዎች አንዱ ነው።"
+      }
+    },
+    {
+      "id": "r08",
+      "name": "Mimi OM",
+      "date": "4 years ago",
+      "stars": 3,
+      "body": {
+        "en": "Easy place to locate and get to. I bought groceries here multiple times. The customer service is friendly and helpful. It can be very crowded. I hope they bring in a wider variety of international snacks, biscuits and chocolates. Overall, it's good for basic everyday grocery shopping.",
+        "am": "ቦታውን ለማግኘትና ወደዚያ ለመድረስ ቀላል ነው። በርካታ ጊዜ እቃዎችን ከዚህ ገዝቻለሁ። የደንበኞች አገልግሎቱ ተግባቢና እርዳታ ሰጪ ነው። አንዳንድ ጊዜ በጣም ይጨናነቃል። ተጨማሪ የዓለም አቀፍ ስናክ፣ ብስኩትና የቸኮሌት ምርቶችን ቢያመጡ ደስ ይለኛል። በአጠቃላይ ግን ለዕለታዊ መሠረታዊ ግሮሰሪ ግዢ ጥሩ ቦታ ነው።"
+      }
+    },
+    {
+      "id": "r09",
+      "name": "Micco Jay Bugtai",
+      "date": "7 years ago",
+      "stars": 4,
+      "body": {
+        "en": "Probably the most well-stocked supermarket I've been to. They still don't have everything I need, but they have a good selection of many products.",
+        "am": "እስካሁን ከጎበኘኋቸው ሱፐርማርኬቶች ውስጥ ምርቶች በብዛት የተሟሉበት አንዱ ሊሆን ይችላል። የምፈልገውን ሁሉ ባይኖራቸውም፣ ብዙ ዓይነት ምርቶች ጥሩ ምርጫ አላቸው።"
+      }
+    },
+    {
+      "id": "r10",
+      "name": "Degu Ethiopia Tours (Degu Ashenafi)",
+      "date": "4 years ago",
+      "stars": 5,
+      "body": {
+        "en": "I had a great time at Friendship Hypermarket with amazing restaurants offering nice food and drinks. Come and enjoy the capital city of Ethiopia.",
+        "am": "በፍሬንድሺፕ ሃይፐርማርኬት ጥሩ ምግብና መጠጥ ባሉት አስደናቂ ሬስቶራንት በጣም ጥሩ ጊዜ አሳልፌያለሁ። መጥታችሁ በኢትዮጵያን ዋና ከተማ ተዝናኑባት።"
+      }
+    },
+    {
+      "id": "r11",
+      "name": "Yúmina Ludmilla (Yummy)",
+      "date": "6 years ago",
+      "stars": 5,
+      "body": {
+        "en": "You will find a little bit of everything here. The staff are friendly and helpful.",
+        "am": "እዚህ ከሁሉም ነገር ማግኘት ትችላላችሁ። ሠራተኞቹ ተግባቢና እርዳታ ሰጪ ናቸው።"
+      }
+    },
+    {
+      "id": "r12",
+      "name": "Amir Bukhari",
+      "date": "a year ago",
+      "stars": 4,
+      "body": {
+        "en": "A place where you can get basic things such as clothes, shoes, groceries, electronics and kids' toys.",
+        "am": "ልብስ፣ ጫማ፣ ግሮሰሪ፣ ኤሌክትሮኒክስና የልጆች መጫወቻዎችን ጨምሮ መሠረታዊ ዕቃዎችን ማግኘት የሚችሉበት ቦታ ነው።"
+      }
+    },
+    {
+      "id": "r13",
+      "name": "Selma Rahim",
+      "date": "3 years ago",
+      "stars": 4,
+      "body": {
+        "en": "It has two sections: grocery and home furniture. The grocery section is very good.",
+        "am": "ሁለት ክፍሎች አሉት፦ የግሮሰሪ እና የቤት ዕቃዎች። የግሮሰሪ ክፍሉ በጣም ጥሩ ነው።"
+      }
+    },
+    {
+      "id": "r14",
+      "name": "yohannes balcha",
+      "date": "9 years ago",
+      "stars": 5,
+      "body": {
+        "en": "One of the largest supermarkets in Addis. You can find furniture, household products and much more.",
+        "am": "በአዲስ አበባ ካሉ ትልልቅ ሱፐርማርኬቶች አንዱ ነው። የቤት ዕቃዎችን፣ የቤት ውስጥ ምርቶችንና ሌሎችም ብዙ ዕቃዎችን ማግኘት ይችላሉ።"
+      }
+    },
+    {
+      "id": "r15",
+      "name": "Aaron Liu",
+      "date": "8 years ago",
+      "stars": 5,
+      "body": {
+        "en": "You can find most of the things you need for everyday living, including cooking tools.",
+        "am": "የማብሰያ ዕቃዎችን ጨምሮ ለዕለታዊ ኑሮ የሚያስፈልጉዎትን አብዛኛዎቹን ዕቃዎች እዚህ ማግኘት ይችላሉ።"
+      }
+    }
+  ]
+}

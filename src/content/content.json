@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "brand": { "en": "Friendship Hypermarket", "am": "ፍሬንድሺፕ ሃይፐርማርኬት" },
+    "switchLabel": { "en": "Change language", "am": "ቋንቋ ይቀይሩ" },
+    "skipToContent": { "en": "Skip to content", "am": "ወደ ይዘቱ ይለፉ" }
+  },
+
+  "nav": {
+    "home": { "en": "Home", "am": "ዋና ገጽ" },
+    "about": { "en": "About", "am": "ስለ እኛ" },
+    "contact": { "en": "Contact", "am": "አግኙን" },
+    "menuOpen": { "en": "Open menu", "am": "ዝርዝሩን ይክፈቱ" },
+    "menuClose": { "en": "Close menu", "am": "ዝርዝሩን ይዝጉ" }
+  },
+
+  "hero": {
+    "welcome": { "en": "Welcome to", "am": "እንኳን ወደ ፍሬንድሺፕ ሃይፐርማርኬት" },
+    "brandLine": { "en": "Friendship Hypermarket!", "am": "በደህና መጡ! " },
+    "body": {
+      "en": "From early morning fresh bakery goods to electronics and home appliances, Friendship Hypermarket brings convenience and value to your family routine.",
+      "am": "በጠዋቱ ከምጋገሩ ትኩስ የዳቦ ውጤቶች እስከ ኤሌክትሮኒክስና የቤት ውስጥ እቃዎች ድረስ፣ ለቤተሰብዎ ዕለታዊ ኑሮ ምቾትንና ዋጋን ፍሬንድሺፕ ሃይፐርማርኬት ያቀርባል።"
+    },
+    "cta": { "en": "Call Now", "am": "ይደውሉ" },
+    "ctaAria": {
+      "en": "Call Friendship Hypermarket on 092 931 9732",
+      "am": "ፍሬንድሺፕ ሃይፐርማርኬትን በ092 931 9732 ይደውሉ"
+    },
+    "videoAlt": {
+      "en": "Background video of the store",
+      "am": "የመደብሩ የጀርባ ቪዲዮ"
+    }
+  },
+
+  "products": {
+    "eyebrow": { "en": "In store now", "am": "አሁን በመደብራችን ውስጥ" },
+    "heading": { "en": "What we carry", "am": "የምናቀርባቸው ምርቶች" },
+    "subheading": {
+      "en": " furniture, electronics, fresh food and home essentials, all under one roof.",
+      "am": " የቤት ዕቃዎች፣ ኤሌክትሮኒክስ፣ ትኩስ ምግብና የቤት ዉስጥ አስፈላጊ እቃዎች፣ ሁሉም በአንድ ጣሪያ ሥር።"
+    },
+    "prev": { "en": "Previous product", "am": "ቀዳሚ ምርት" },
+    "next": { "en": "Next product", "am": "ቀጣይ ምርት" },
+    "goTo": { "en": "Go to product", "am": "ወደ ምርቱ ይሂዱ" },
+    "pause": { "en": "Pause auto-scroll", "am": "ራስ-ሰር ማንሸራተትን አቁም" },
+    "play": { "en": "Resume auto-scroll", "am": "ራስ-ሰር ማንሸራተትን ቀጥል" }
+  },
+
+  "about": {
+    "heading": { "en": "About us", "am": "ስለ እኛ" },
+    "body": {
+      "en": "Friendship Hypermarket is more than just a grocery, it is a cornerstone of daily living in Addis Ababa. Built around the concept of community and convenience, we bring thousands of household products, fresh food categories, beverages, personal care items and furniture under one roof. Our mission is to make shopping effortless by providing a clean, welcoming environment backed by friendly service and fair prices.",
+      "am": "ፍሬንድሺፕ ሃይፐርማርኬት ከመደበኛ የምግብ መደብር በላይ ነው። በአዲስ አበባ ውስጥ የዕለት ተዕለት ኑሮ መሰረታዊ ምሰሶ ነው። በማህበረሰብ እና በምቾት ጽንሰ-ሀሳብ ላይ የተገነባው ይህ መደብር በሺዎች የሚቆጠሩ የቤት ውስጥ ምርቶችን፣ ትኩስ የምግብ ዓይነቶችን፣ መጠጦችን፣ የግል እንክብካቤ መጠበቅያ ዕቃዎችን እና የቤት ዕቃዎችን በአንድ ጣሪያ ስር ያቀርባል። ተልዕኳችን ንጹህ እና ተቀባይነት ያለው ከባብ በመፍጠር ወዳጃዊ አገልግሎት ከተመጣጣኝ ዋጋ ጋር በማጣመር ግብይትን ቀላል እና ምቹ ማድረግ ነው።"    },
+    "whyHeading": { "en": "Why us?", "am": "ለምን እኛን ይመርጡ?" },
+    "whyBody": {
+      "en": "We make daily shopping effortless by providing unmatched variety and dependable stock across every aisle, from fresh bakery items to furniture. Our commitment to fair pricing, friendly customer service and a welcoming environment ensures your family always finds exactly what it needs under one roof.",
+      "am": "ከትኩስ የተጋገሩ ምርቶች እስከ የቤት ዕቃዎች ድረስ ተወዳዳሪ በሌለው ልዩነት እና አስተማማኝ ክምችቶች በየመደርደሪያው ላይ በማቅረብ ዕለታዊ ግብይትን ቀላል እናደርጋለን። ለተመጣጣኝ ዋጋ፣ ለወዳጃዊ ደንበኞች አገልግሎት እና ሁሉን በደስታ ለምቀበል ከባቢ ያለን ቁርጠኝነት ቤተሰቦዎ በአንድ ጣሪያ ስር የሚፈልጉትን ሁሉ ሁልጊዜ እንደሚያገኙ ያረጋግጣል።"
+    },
+    "backdropAlt": {
+      "en": "Shopping trolley moving down a stocked aisle",
+      "am": "በተሞላ መተላለፊያ ውስጥ የሚንቀሳቀስ የግብይት ጋሪ"
+    }
+  },
+
+  "reviews": {
+    "heading": { "en": "Happy Customers!", "am": "ደስተኛ ደንበኞቻችን!" },
+    "subheading": {
+      "en": "What Customers say after shopping with us.",
+      "am": "ደንበኞቻችን ከግብይት በኋላ ካሉት።"
+    },
+    "outOf": { "en": "out of 5", "am": "ከ5" },
+    "basedOn": { "en": "based on", "am": "በ" },
+    "reviewsWord": { "en": "reviews", "am": "አስተያየቶች ላይ የተመሠረተ" },
+    "prev": { "en": "Previous reviews", "am": "ቀዳሚ አስተያየቶች" },
+    "next": { "en": "Next reviews", "am": "ቀጣይ አስተያየቶች" },
+    "more": { "en": "Read more", "am": "ተጨማሪ ያንብቡ" },
+    "less": { "en": "Show less", "am": "ያንሳል" },
+    "page": { "en": "Page", "am": "ገጽ" },
+    "starsWord": { "en": "stars", "am": "ኮከቦች" }
+  },
+
+  "location": {
+    "heading": { "en": "Location", "am": "አድራሻ" },
+    "subheading": {
+      "en": "Two branches, both easy to reach.",
+      "am": "በቀላሉ የሚደረስባቸው ሁለት ቅርንጫፎች።"
+    },
+    "hours": { "en": "Open daily: 8:00 AM - 10:00 PM", "am": "በየቀኑ ይከፈታል፡ ከጠዋቱ 2፡00 - ምሽቱ 4፡00" },
+    "directions": { "en": "Get directions", "am": "አቅጣጫ ይመልከቱ" },
+    "branches": {
+      "cmc": {
+        "name": { "en": "Bole Branch", "am": "ቦሌ ቅርንጫፍ" },
+        "address": {
+          "en": "Bole Friendship Building",
+          "am": "ቦሌ ፍሬንድሺፕ ሕንፃ"
+        }
+      },
+      "second": {
+        "name": { "en": "CMC Branch", "am": "ሲኤምሲ ቅርንጫፍ" },
+        "address": {
+          "en": "CMC, next to Salite Mihret",
+          "am": "ሲኤምሲ፣ ከሳሊተ ምሕረት አጠገብ"
+        }
+      }
+    },
+    "mapTitle": { "en": "Map of", "am": "የካርታ አድራሻ፡" }
+  },
+
+  "footer": {
+    "heading": { "en": "Contact us", "am": "በእነዚህ አማራጮች ያግግኙን" },
+    "socialHeading": { "en": "Join our social media", "am": "በማህበራዊ ሚዲያ ይቀላቀሉን" },
+    "phone": { "en": "Phone", "am": "ስልክ" },
+    "email": { "en": "Email", "am": "ኢሜይል" },
+    "linkPending": { "en": "Link coming soon", "am": "ሊንኩ በቅርቡ ይጨመራል" },
+    "rights": {
+      "en": "Friendship Hypermarket. All rights reserved.",
+      "am": "ፍሬንድሺፕ ሃይፐርማርኬት። መብቱ በሕግ የተጠበቀ ነው።"
+    }
+  }
+}
