@@ -3,7 +3,7 @@ import { useLang } from "../LanguageContext";
 import productsData from "../content/products.json";
 import SmartImage from "./SmartImage";
 import Reveal from "../hooks/useReveal";
-import { ChevronLeft, ChevronRight, PauseIcon, PlayIcon } from "./Icons";
+import { ChevronLeft, ChevronRight/*, PauseIcon, PlayIcon*/ } from "./Icons";
 
 const AUTOPLAY_MS = 4500;
 
@@ -150,14 +150,14 @@ export default function ProductShowcase() {
             ))}
           </ol>
 
-          <button
+          {/* <button
             type="button"
             onClick={() => setPaused((v) => !v)}
             aria-label={paused ? t("products.play") : t("products.pause")}
             className="grid h-8 w-8 place-items-center rounded-full text-fh-cream/45 transition hover:bg-fh-cream/10 hover:text-fh-teal"
           >
             {paused ? <PlayIcon className="h-4 w-4" /> : <PauseIcon className="h-4 w-4" />}
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
