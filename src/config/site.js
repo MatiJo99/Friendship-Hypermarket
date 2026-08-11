@@ -1,9 +1,9 @@
 export const site = {
   phone: {
-    dial: "+251929319732",
-    display: "+25192 931 9732",
+    dial: "+251998151799",
+    display: "+251998151799",
   },
-  contactNumbers: ["+251998151799", "+251995880818", "+2510116639841"],
+  contactNumbers: ["+251998151799", "+251995880818", "0116639841"],
 
   email: "friendshiphypermarketmedia@gmail.com",
   social: {

@@ -47,16 +47,6 @@ export default function Hero() {
   );
 }
 
-/**
- * Background video with a three-step fallback chain:
- *   1. the video, if the file exists
- *   2. the poster image, if the video is missing or won't play
- *   3. a plain gradient plus a labelled hint, if neither exists
- *
- * The video is muted, looping and playsInline — those three together
- * are what let mobile browsers autoplay at all. It's decorative, so
- * it's hidden from screen readers.
- */
 function VideoBackdrop() {
   const [videoFailed, setVideoFailed] = useState(!site.heroVideo);
   const [posterFailed, setPosterFailed] = useState(!site.heroPoster);

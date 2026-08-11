@@ -2,7 +2,6 @@ import { FacebookIcon, InstagramIcon, TikTokIcon } from "./Icons";
 import site from "../config/site";
 import { useLang } from "../LanguageContext";
 
-/* Order matches the Figma: Facebook, Instagram, TikTok. */
 const NETWORKS = [
   { key: "facebook", name: "Facebook", Icon: FacebookIcon, brand: "#1877F2" },
   { key: "instagram", name: "Instagram", Icon: InstagramIcon, brand: "#D62976" },

@@ -85,22 +85,22 @@ export function ExternalIcon(props) {
   );
 }
 
-export function PauseIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <rect x="7" y="5" width="3.5" height="14" rx="1" />
-      <rect x="13.5" y="5" width="3.5" height="14" rx="1" />
-    </svg>
-  );
-}
+// export function PauseIcon(props) {
+//   return (
+//     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+//       <rect x="7" y="5" width="3.5" height="14" rx="1" />
+//       <rect x="13.5" y="5" width="3.5" height="14" rx="1" />
+//     </svg>
+//   );
+// }
 
-export function PlayIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M8 5.5v13l11-6.5z" />
-    </svg>
-  );
-}
+// export function PlayIcon(props) {
+//   return (
+//     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+//       <path d="M8 5.5v13l11-6.5z" />
+//     </svg>
+//   );
+// }
 
 export function QuoteIcon(props) {
   return (
