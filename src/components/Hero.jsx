@@ -59,7 +59,7 @@ function VideoBackdrop() {
       {showVideo && (
         <video
           ref={videoRef}
-          className="h-full w-full object-contain sm:object-cover sm:object-top"
+          className="h-full w-full object-cover object-top"
           src={site.heroVideo}
           poster={site.heroPoster || undefined}
           autoPlay
@@ -75,7 +75,7 @@ function VideoBackdrop() {
         <img
           src={site.heroPoster}
           alt=""
-          className="h-full w-full object-contain drift sm:object-cover sm:object-top"
+          className="h-full w-full object-cover object-top drift"
           onError={() => setPosterFailed(true)}
         />
       )}
