@@ -1,33 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  /* Surfaces — the near-black plum from the design */
+  /* Surfaces — Rich Midnight Obsidian & Plum */
   --color-fh-night: #150b23;
   --color-fh-deep: #0e0718;
   --color-fh-plum: #241436;
   --color-fh-plum-soft: #2f1c45;
 
-  /* Primary accent — the warm gold on every heading */
-  --color-fh-gold: #e0be7e;
-  --color-fh-gold-soft: #f0d9a8;
-  --color-fh-gold-dim: #b8934f;
+  /* Primary accent — Warm luminous gold for headings, buttons & accents */
+  --color-fh-gold: #FFF;
+  --color-fh-gold-soft: #FFFFFF;
+  --color-fh-gold-dim: #FFFFFF;
+  --color-fh-gold-bright: #FFFFFF;
 
-  --color-fh-teal: #7fd8c4; /* Products */
-  --color-fh-lilac: #c4a7f0; /* Why us */
-  --color-fh-amber: #f5b942; /* Reviews */
-  --color-fh-sky: #8ec5f5; /* Location */
+  --color-fh-teal: #FFFFFF; /* Unified warm gold */
+  --color-fh-lilac: #FFFFFF; /* Unified warm gold */
+  --color-fh-amber: #FFFFFF; /* Reviews & stars warm gold */
+  --color-fh-sky: #FFFFFF; /* Location warm gold */
 
-  /* Text */
-  --color-fh-cream: #f5f1ea;
-  --color-fh-muted: #cbc3d6;
+  /* Text — Warm gold high contrast on dark backgrounds */
+  --color-fh-cream: #FFFFFF;
+  --color-fh-muted: #FFFFFF;
 
-  /* The testimonial summary card is light on a dark page */
-  --color-fh-paper: #ece7f2;
-  --color-fh-paper-ink: #2c2436;
+  /* Card Surfaces */
+  --color-fh-paper: #241436;
+  --color-fh-paper-ink: #FFFFFF;
 
-  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-ethiopic: "Noto Sans Ethiopic", "Noto Serif Ethiopic", sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-ethiopic-display: "Noto Serif Ethiopic", "Noto Sans Ethiopic", serif;
+  --font-ethiopic-body: "Noto Sans Ethiopic", sans-serif;
 
   --shadow-card: 0 18px 45px -20px rgb(0 0 0 / 0.8);
   --shadow-gold: 0 12px 32px -12px rgb(224 190 126 / 0.35);
@@ -42,12 +44,12 @@
   body {
     font-family: var(--font-body);
     background-color: var(--color-fh-night);
-    color: var(--color-fh-cream);
+    color: #ffffff;
     -webkit-font-smoothing: antialiased;
   }
 
   :lang(am) {
-    font-family: var(--font-ethiopic);
+    font-family: var(--font-ethiopic-body);
     line-height: 1.8;
     letter-spacing: 0;
     word-spacing: 0.02em;
@@ -56,7 +58,9 @@
   :lang(am) h1,
   :lang(am) h2,
   :lang(am) h3,
-  :lang(am) h4 {
+  :lang(am) h4,
+  :lang(am) .font-display {
+    font-family: var(--font-ethiopic-display);
     line-height: 1.5;
     font-size: 0.93em; /* Ethiopic reads optically larger at equal px */
     font-weight: 600;
@@ -136,13 +140,13 @@
     transform: scale(1.08);
   }
 
-  /* About: desaturated at rest, full colour on hover */
+  /* About: slight contrast boost at rest, pop on hover */
   .hv-saturate img {
-    filter: grayscale(0.45) contrast(1.05);
+    filter: contrast(1.05);
     transition: filter 600ms ease, transform 600ms ease;
   }
   .hv-saturate:hover img {
-    filter: grayscale(0) contrast(1.1);
+    filter: contrast(1.1);
     transform: scale(1.04);
   }
 

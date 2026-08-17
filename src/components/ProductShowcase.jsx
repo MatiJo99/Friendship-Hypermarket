@@ -65,7 +65,7 @@ export default function ProductShowcase() {
   const activeDot = index % n;
 
   return (
-    <section className="bg-fh-night">
+    <section id="products" className="bg-fh-night">
       <div
         className="mx-auto max-w-7xl px-5 py-14 lg:px-10 lg:py-16"
         onMouseEnter={() => setPaused(true)}
@@ -73,12 +73,12 @@ export default function ProductShowcase() {
         onFocusCapture={() => setPaused(true)}
         onBlurCapture={() => setPaused(false)}
       >
-        {/* ---- Heading (teal accent for this section) ---- */}
+        {/* ---- Section Heading ---- */}
         <Reveal>
-          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.35em] text-fh-teal/80">
+          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.35em] text-white/80">
             {t("products.eyebrow")}
           </p>
-          <h2 className="mt-2 text-center font-display text-3xl font-bold text-fh-teal lg:text-[2.1rem]">
+          <h2 className="mt-2 text-center font-display text-3xl font-bold text-white lg:text-[2.1rem]">
             {t("products.heading")}
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-sm leading-relaxed text-fh-muted">
@@ -130,8 +130,8 @@ export default function ProductShowcase() {
           </button>
         </Reveal>
 
-        {/* ---- Dots + pause ---- */}
-        <div className="mt-7 flex items-center justify-center gap-4">
+        {/* ---- Dots ---- */}
+        <div className="mt-8 flex items-center justify-center gap-4">
           <ol className="flex items-center gap-2.5">
             {items.map((product, i) => (
               <li key={product.id}>
@@ -149,15 +149,6 @@ export default function ProductShowcase() {
               </li>
             ))}
           </ol>
-
-          {/* <button
-            type="button"
-            onClick={() => setPaused((v) => !v)}
-            aria-label={paused ? t("products.play") : t("products.pause")}
-            className="grid h-8 w-8 place-items-center rounded-full text-fh-cream/45 transition hover:bg-fh-cream/10 hover:text-fh-teal"
-          >
-            {paused ? <PlayIcon className="h-4 w-4" /> : <PauseIcon className="h-4 w-4" />}
-          </button> */}
         </div>
       </div>
     </section>
@@ -182,7 +173,7 @@ function ProductCard({ product, tr }) {
         <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-neutral-500">
           {tr(product.category)}
         </p>
-        <h3 className="mt-1.5 font-display text-lg font-semibold text-neutral-900 transition group-hover:text-fh-gold-dim">
+        <h3 className="mt-1.5 font-display text-lg font-semibold text-neutral-900">
           {tr(product.name)}
         </h3>
         <p className="mt-1 text-xs leading-relaxed text-neutral-500">

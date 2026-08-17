@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { useLang } from "../LanguageContext";
+import site from "../config/site";
 import reviewsData from "../content/reviews.json";
 import Reveal from "../hooks/useReveal";
 import { Star, QuoteIcon, ChevronLeft, ChevronRight } from "./Icons";
@@ -48,9 +49,9 @@ const { average, count, distribution } = useMemo(() => {
   return (
     <section id="reviews" className="bg-fh-night">
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-10 lg:py-20">
-        {/* ---- Heading (amber accent for this section) ---- */}
+        {/* ---- Heading (amber accent) ---- */}
         <Reveal>
-          <h2 className="text-center font-display text-3xl font-bold text-fh-amber lg:text-[2.3rem]">
+          <h2 className="text-center font-display text-3xl font-bold text-white lg:text-[2.3rem]">
             {t("reviews.heading")}
           </h2>
           <p className="mt-2 text-center text-sm text-fh-muted">
@@ -58,40 +59,59 @@ const { average, count, distribution } = useMemo(() => {
           </p>
         </Reveal>
 
-        {/* ---- Summary card ---- */}
-        <Reveal from="zoom" delay={120} className="mt-9">
-          <div className="grid gap-8 rounded-2xl border border-fh-gold/25 bg-gradient-to-br from-fh-plum/80 to-fh-deep/80 p-6 backdrop-blur-sm sm:grid-cols-[auto_1fr] sm:items-center sm:gap-12 sm:p-8">
-            <div className="text-center sm:text-left">
-              <p className="font-display text-6xl font-bold leading-none text-fh-amber">
-                {average.toFixed(2)}
-              </p>
-              <StarRow value={average} className="mt-3 justify-center text-fh-amber sm:justify-start" size="h-5 w-5" />
-              <p className="mt-2 text-xs text-fh-muted">
-                {t("reviews.basedOn")} {count} {t("reviews.reviewsWord")}
-              </p>
-            </div>
+        {/* ---- Summary & Google Review Link ---- */}
+        <div className="mt-9 grid gap-6 lg:grid-cols-2 lg:items-stretch">
+          <Reveal from="zoom" delay={120}>
+            <a
+              href={site.googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex h-full flex-col items-center justify-center gap-5 rounded-2xl border border-fh-gold/25 bg-gradient-to-br from-fh-plum/80 to-fh-deep/80 p-8 text-center backdrop-blur-sm transition duration-300 hover:border-fh-gold hover:bg-fh-plum/90"
+            >
+              <span className="font-display text-3xl font-bold text-white lg:text-4xl">
+                {t("reviews.googleReview") || "Google Review"}
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-fh-gold/40 bg-black/40 px-6 py-2.5 text-sm font-semibold text-fh-cream transition duration-300 group-hover:bg-fh-gold group-hover:text-fh-deep">
+                {t("reviews.viewOnGoogle") || "View a review on Google"}
+              </span>
+            </a>
+          </Reveal>
 
-            {/* Distribution bars — the quickest way to read a rating */}
-            <ul className="space-y-2">
-              {distribution.map(({ star, hits, percent }) => (
-                <li key={star} className="flex items-center gap-3">
-                  <span className="w-10 shrink-0 text-right text-xs tabular-nums text-fh-muted">
-                    {star} ★
-                  </span>
-                  <span className="h-2 flex-1 overflow-hidden rounded-full bg-fh-cream/10">
-                    <span
-                      className="block h-full rounded-full bg-fh-amber/80 transition-[width] duration-700"
-                      style={{ width: `${percent}%` }}
-                    />
-                  </span>
-                  <span className="w-6 shrink-0 text-xs tabular-nums text-fh-muted/70">
-                    {hits}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Reveal>
+          {/* ---- Summary card ---- */}
+          <Reveal from="zoom" delay={200} className="h-full">
+            <div className="flex h-full flex-col justify-center gap-8 rounded-2xl border border-fh-gold/25 bg-gradient-to-br from-fh-plum/80 to-fh-deep/80 p-6 backdrop-blur-sm sm:grid-flow-col sm:grid-cols-[auto_1fr] sm:items-center sm:gap-12 sm:p-8">
+              <div className="text-center sm:text-left">
+                <p className="font-display text-6xl font-bold leading-none text-fh-amber">
+                  {average.toFixed(2)}
+                </p>
+                <StarRow value={average} className="mt-3 justify-center text-fh-amber sm:justify-start" size="h-5 w-5" />
+                <p className="mt-2 text-xs text-fh-muted">
+                  {t("reviews.basedOn")} {count} {t("reviews.reviewsWord")}
+                </p>
+              </div>
+
+              {/* Distribution bars */}
+              <ul className="w-full space-y-2">
+                {distribution.map(({ star, hits, percent }) => (
+                  <li key={star} className="flex items-center gap-3">
+                    <span className="w-10 shrink-0 text-right text-xs tabular-nums text-fh-muted">
+                      {star} ★
+                    </span>
+                    <span className="h-2 flex-1 overflow-hidden rounded-full bg-fh-cream/10">
+                      <span
+                        className="block h-full rounded-full bg-fh-amber/80 transition-[width] duration-700"
+                        style={{ width: `${percent}%` }}
+                      />
+                    </span>
+                    <span className="w-6 shrink-0 text-xs tabular-nums text-fh-muted/70">
+                      {hits}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+        </div>
 
         {/* ---- Review cards ---- */}
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -101,8 +121,6 @@ const { average, count, distribution } = useMemo(() => {
                 review={review}
                 tint={AVATAR_TINTS[(page * PER_PAGE + i) % AVATAR_TINTS.length]}
                 tr={tr}
-                moreLabel={t("reviews.more")}
-                lessLabel={t("reviews.less")}
                 starsWord={t("reviews.starsWord")}
               />
             </Reveal>
@@ -151,14 +169,11 @@ const { average, count, distribution } = useMemo(() => {
   );
 }
 
-function ReviewCard({ review, tint, tr, moreLabel, lessLabel, starsWord }) {
-  const [expanded, setExpanded] = useState(false);
+function ReviewCard({ review, tint, tr, starsWord }) {
   const body = tr(review.body);
-  const isLong = body.length > 150;
 
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-fh-cream/10 bg-fh-plum/40 p-5 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-fh-amber/40 hover:bg-fh-plum/60">
-      {/* Gradient hairline that lights up on hover */}
       <span
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-fh-amber/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -190,23 +205,11 @@ function ReviewCard({ review, tint, tr, moreLabel, lessLabel, starsWord }) {
         label={`${review.stars} ${starsWord}`}
       />
 
-      <p
-        className={`mt-3 text-sm leading-relaxed text-fh-muted ${
-          !expanded && isLong ? "line-clamp-4" : ""
-        }`}
-      >
-        {body}
-      </p>
-
-      {isLong && (
-        <button
-          type="button"
-          onClick={() => setExpanded((v) => !v)}
-          className="mt-auto pt-3 text-left text-xs font-semibold text-fh-teal transition hover:text-fh-gold"
-        >
-          {expanded ? lessLabel : moreLabel}
-        </button>
-      )}
+      <div className="mt-3 h-[8.5rem]">
+        <p className="text-sm leading-relaxed text-fh-muted line-clamp-6">
+          {body}
+        </p>
+      </div>
     </article>
   );
 }

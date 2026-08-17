@@ -15,11 +15,13 @@ export const site = {
   heroVideo: "/assets/video/store-loop.mp4",
   heroPoster: "/assets/photos/hero-poster.jpg",
 
-  heroOverlayOpacity: 0.72,
+  heroOverlayOpacity: 0.38,
 
   aboutBackdrop: "/assets/photos/aisle-trolley.jpg",
   aboutOverlayOpacity: 0.68,
   
+  googleReviewUrl: "https://www.google.com/search?sca_esv=adee44be14316a28&sxsrf=APpeQnu919gnj9ahCw3vuOCQAuTi2hCtCA:1786988703940&q=friendship+hypermarket&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_1jPJOc214YjRRuFL1i0-woNBPqeTPjc4NQwfxml3H_I4bgKD5piH1DhFNrcM8pkTco7d5_EbhQKG3hFjWGWYLsecfNjdH8rk-KoDRmorCGQPDNzjA%3D%3D&sa=X&sqi=2&ved=2ahUKEwi5v6nXm6iWAxUB_7sIHbT7DTAQrrQLegQIJhAA&biw=1536&bih=776&dpr=1.25",
+
   branches: [
     {
       id: "cmc",

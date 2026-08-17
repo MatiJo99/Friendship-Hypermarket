@@ -10,9 +10,9 @@ export default function Location() {
   return (
     <section id="location" className="bg-fh-night">
       <div className="mx-auto max-w-7xl px-5 py-14 lg:px-10 lg:py-16">
-        {/* ---- Heading (sky accent for this section) ---- */}
+        {/* ---- Heading (sky accent) ---- */}
         <Reveal from="left">
-          <h2 className="font-display text-3xl font-bold text-fh-sky lg:text-[2.3rem]">
+          <h2 className="font-display text-3xl font-bold text-white lg:text-[2.3rem]">
             {t("location.heading")}
           </h2>
           <p className="mt-2 text-sm text-fh-muted">{t("location.subheading")}</p>
@@ -49,7 +49,7 @@ export default function Location() {
                       aria-label="Map placeholder"
                       className="flex h-[280px] flex-col items-center justify-center gap-2 border-b border-dashed border-fh-gold/30 bg-black/25 px-6 text-center lg:h-[320px]"
                     >
-                      <span className="text-[11px] font-semibold uppercase tracking-wide text-fh-gold">
+                      <span className="text-[11px] font-semibold uppercase tracking-wide text-white">
                         Map embed
                       </span>
                       <code className="text-[10px] leading-relaxed text-fh-cream/50">
@@ -62,7 +62,7 @@ export default function Location() {
 
                   <div className="flex flex-wrap items-end justify-between gap-4 p-5">
                     <div className="min-w-0">
-                      <h3 className="font-display text-lg font-semibold text-fh-gold">
+                      <h3 className="font-display text-lg font-semibold text-white">
                         {name}
                       </h3>
                       <p className="mt-1.5 flex items-start gap-2 whitespace-pre-line text-sm leading-relaxed text-fh-cream/85">

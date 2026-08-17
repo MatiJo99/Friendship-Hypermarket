@@ -12,13 +12,13 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-16">
           {/* ---- Contact ---- */}
           <Reveal from="left">
-            <h2 className="font-display text-3xl font-bold text-fh-gold lg:text-[2.1rem]">
+            <h2 className="font-display text-3xl font-bold text-white lg:text-[2.1rem]">
               {t("footer.heading")}
             </h2>
 
             <dl className="mt-6 space-y-3 font-display text-[15px] font-semibold">
               <div className="flex flex-wrap items-baseline gap-x-2">
-                <dt className="text-fh-gold">{t("footer.phone")}:</dt>
+                <dt className="text-white">{t("footer.phone")}:</dt>
                 <dd className="flex flex-col gap-1">
                   {site.contactNumbers.map((number) => (
                     <a
@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-wrap items-baseline gap-x-2">
-                <dt className="text-fh-gold">{t("footer.email")}:</dt>
+                <dt className="text-white">{t("footer.email")}:</dt>
                 <dd>
                   <a
                     href={`mailto:${site.email}`}
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* ---- Social ---- */}
           <Reveal from="right" delay={140}>
-            <h2 className="font-display text-3xl font-bold text-fh-gold lg:text-[2.1rem]">
+            <h2 className="font-display text-3xl font-bold text-white lg:text-[2.1rem]">
               {t("footer.socialHeading")}
             </h2>
             <div className="mt-6">

@@ -75,7 +75,9 @@
     "more": { "en": "Read more", "am": "ተጨማሪ ያንብቡ" },
     "less": { "en": "Show less", "am": "ያንሳል" },
     "page": { "en": "Page", "am": "ገጽ" },
-    "starsWord": { "en": "stars", "am": "ኮከቦች" }
+    "starsWord": { "en": "stars", "am": "ኮከቦች" },
+    "googleReview": { "en": "Google Review", "am": "የጉግል አስተያየት" },
+    "viewOnGoogle": { "en": "View a review on Google", "am": "በጉግል ላይ አስተያየት ይመልከቱ" }
   },
 
   "location": {

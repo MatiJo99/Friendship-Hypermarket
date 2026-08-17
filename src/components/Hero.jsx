@@ -8,35 +8,33 @@ export default function Hero() {
   const { t } = useLang();
 
   return (
-    <section id="home" className="relative isolate overflow-hidden">
+    <section id="home" className="relative isolate flex min-h-[75vh] items-center justify-center overflow-hidden sm:min-h-[85vh]">
       <VideoBackdrop />
 
-      <div className="relative mx-auto max-w-4xl px-5 pb-14 pt-16 text-center lg:pb-20 lg:pt-24">
+      <div className="relative mx-auto max-w-4xl px-5 pb-16 pt-24 text-center lg:pb-24 lg:pt-32">
         <Reveal from="fade">
-          <p className="font-display text-2xl font-semibold text-fh-gold sm:text-3xl">
+          <p className="font-display text-2xl font-black text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] sm:text-3xl">
             {t("hero.welcome")}
           </p>
         </Reveal>
 
         <Reveal delay={120}>
-          <h1 className="mt-1 font-display text-3xl font-bold leading-tight text-fh-gold sm:text-4xl lg:text-[2.7rem]">
+          <h1 className="mt-2 font-display text-3xl font-black leading-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] sm:text-4xl lg:text-[2.85rem]">
             {t("hero.brandLine")}
           </h1>
         </Reveal>
 
         <Reveal delay={240}>
-          <p className="mx-auto mt-6 max-w-2xl font-display text-[15px] font-semibold leading-relaxed text-fh-gold-soft/90 lg:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-[15px] font-bold leading-relaxed text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] lg:text-base">
             {t("hero.body")}
           </p>
         </Reveal>
 
         <Reveal from="zoom" delay={360}>
-          {/* Outlined button, as in the Figma. tel: opens the dialler
-              with the number already filled in. */}
           <a
             href={`tel:${site.phone.dial}`}
             aria-label={t("hero.ctaAria")}
-            className="group mt-8 inline-flex items-center gap-3 rounded-md border-2 border-fh-gold bg-fh-gold/10 px-10 py-3 font-display text-lg font-semibold text-fh-gold backdrop-blur-sm transition duration-300 hover:bg-fh-gold hover:text-fh-deep hover:shadow-gold focus-visible:bg-fh-gold focus-visible:text-fh-deep"
+            className="group mt-8 inline-flex items-center gap-3 rounded-xl border-2 border-fh-gold bg-black/40 px-10 py-3.5 font-display text-lg font-semibold text-fh-gold backdrop-blur-md transition duration-300 hover:bg-fh-gold hover:text-fh-deep hover:shadow-gold focus-visible:bg-fh-gold focus-visible:text-fh-deep"
           >
             <PhoneIcon className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
             {t("hero.cta")}
@@ -57,19 +55,18 @@ function VideoBackdrop() {
   const showHint = videoFailed && posterFailed;
 
   return (
-    <div aria-hidden="true" className="absolute inset-0 -z-10 overflow-hidden">
+    <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -top-5 -z-10 overflow-hidden">
       {showVideo && (
         <video
           ref={videoRef}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-top"
           src={site.heroVideo}
           poster={site.heroPoster || undefined}
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
-          onLoadedData={(e) => { e.currentTarget.playbackRate = 0.5; }}
+          preload="auto"
           onError={() => setVideoFailed(true)}
         />
       )}
@@ -78,17 +75,17 @@ function VideoBackdrop() {
         <img
           src={site.heroPoster}
           alt=""
-          className="h-full w-full object-cover drift"
+          className="h-full w-full object-cover object-top drift"
           onError={() => setPosterFailed(true)}
         />
       )}
 
       {showHint && (
-        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-fh-plum via-fh-night to-fh-deep px-6 text-center">
-          <span className="text-[11px] font-semibold uppercase tracking-wide text-fh-gold/70">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-b from-neutral-200 via-neutral-100 to-fh-night px-6 text-center">
+          <span className="text-[11px] font-semibold uppercase tracking-wide text-fh-gold">
             Background video slot
           </span>
-          <code className="text-[10px] leading-relaxed text-fh-cream/40">
+          <code className="text-[10px] leading-relaxed text-fh-muted">
             /assets/video/store-loop.mp4
             <br />
             /assets/photos/hero-poster.jpg
@@ -96,13 +93,12 @@ function VideoBackdrop() {
         </div>
       )}
 
-      {/* Dark veil so the gold headline stays readable over any footage.
-          Tune the strength in src/config/site.js -> heroOverlayOpacity */}
+      {/* Light veil over footage so video is clearly visible while keeping text ultra-crisp */}
       <div
-        className="absolute inset-0 bg-fh-night"
+        className="absolute inset-0 bg-black/20 transition-opacity duration-300"
         style={{ opacity: site.heroOverlayOpacity }}
       />
-      {/* Extra fade at the bottom so the hero melts into the next section */}
+      {/* Smooth fade at the bottom to blend seamlessly into the warm alabaster page */}
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-fh-night" />
     </div>
   );

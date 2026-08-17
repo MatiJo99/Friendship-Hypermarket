@@ -12,13 +12,13 @@ export default function SocialLinks({ size = "sm", className = "" }) {
   const { t } = useLang();
 
   const box = size === "lg" ? "h-12 w-12" : "h-9 w-9";
-  const glyph = size === "lg" ? "h-6 w-6" : "h-5 w-5";
+  const glyph = size === "lg" ? "h-6 w-6" : "h-4.5 w-4.5";
 
   return (
     <ul className={`flex items-center gap-3 ${className}`}>
-      {NETWORKS.map(({ key, name, Icon, brand }) => {
+      {NETWORKS.map(({ key, name, Icon }) => {
         const url = site.social[key];
-        const shared = `${box} grid place-items-center rounded-full transition duration-300`;
+        const shared = `${box} grid place-items-center rounded-full transition-all duration-300`;
 
         if (!url) {
           return (
@@ -42,8 +42,7 @@ export default function SocialLinks({ size = "sm", className = "" }) {
               rel="noopener noreferrer"
               aria-label={name}
               title={name}
-              style={{ color: brand }}
-              className={`${shared} bg-white shadow-sm hover:-translate-y-1 hover:scale-105 hover:shadow-lg`}
+              className={`${shared} border border-fh-gold/30 bg-fh-plum/60 text-fh-gold shadow-sm backdrop-blur-sm hover:-translate-y-1 hover:scale-105 hover:bg-fh-gold hover:text-fh-deep hover:shadow-gold`}
             >
               <Icon className={glyph} />
             </a>

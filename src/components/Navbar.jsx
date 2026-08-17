@@ -16,7 +16,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  /* Transparent over the hero video, solid once you scroll past it. */
+  /* Transparent over the hero video, solid dark plum once scrolled */
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
     onScroll();
@@ -28,8 +28,8 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-fh-deep/95 shadow-lg shadow-black/40 backdrop-blur-md"
-          : "bg-fh-night/40 backdrop-blur-sm"
+          ? "border-b border-fh-gold/15 bg-fh-deep/95 shadow-lg shadow-black/40 backdrop-blur-md"
+          : "border-b border-white/5 bg-fh-night/40 backdrop-blur-sm"
       }`}
     >
       <nav
@@ -46,7 +46,7 @@ export default function Navbar() {
             rounded="rounded-full"
             imgClassName="h-full w-full object-contain"
           />
-          <span className="hidden font-display text-sm font-medium leading-tight text-fh-cream sm:block">
+          <span className="hidden font-display text-sm font-semibold leading-tight text-white sm:block">
             {t("meta.brand")}
           </span>
         </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
             <li key={link.id}>
               <a
                 href={link.href}
-                className="relative font-display text-[15px] font-medium text-fh-gold transition after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-fh-gold after:transition-all after:duration-300 hover:text-fh-gold-soft hover:after:w-full"
+                className="relative font-display text-[15px] font-semibold text-white transition after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-fh-gold after:transition-all after:duration-300 hover:text-white/80 hover:after:w-full"
               >
                 {t(`nav.${link.id}`)}
               </a>
@@ -77,21 +77,21 @@ export default function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? t("nav.menuClose") : t("nav.menuOpen")}
-          className="grid h-10 w-10 place-items-center rounded-lg ring-1 ring-fh-gold/40 md:hidden"
+          className="grid h-10 w-10 place-items-center rounded-lg border border-fh-gold/40 bg-fh-plum/40 text-white md:hidden"
         >
           <span className="relative block h-4 w-5">
             <span
-              className={`absolute left-0 h-0.5 w-5 bg-fh-gold transition-all ${
+              className={`absolute left-0 h-0.5 w-5 bg-white transition-all ${
                 open ? "top-1.5 rotate-45" : "top-0"
               }`}
             />
             <span
-              className={`absolute left-0 top-1.5 h-0.5 w-5 bg-fh-gold transition-opacity ${
+              className={`absolute left-0 top-1.5 h-0.5 w-5 bg-white transition-opacity ${
                 open ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
-              className={`absolute left-0 h-0.5 w-5 bg-fh-gold transition-all ${
+              className={`absolute left-0 h-0.5 w-5 bg-white transition-all ${
                 open ? "top-1.5 -rotate-45" : "top-3"
               }`}
             />
@@ -102,7 +102,7 @@ export default function Navbar() {
       {/* ---- Mobile panel ---- */}
       <div
         id="mobile-menu"
-        className={`overflow-hidden border-t border-fh-gold/15 bg-fh-deep/98 transition-[max-height] duration-300 md:hidden ${
+        className={`overflow-hidden border-t border-fh-gold/15 bg-fh-deep/98 shadow-xl transition-[max-height] duration-300 md:hidden ${
           open ? "max-h-96" : "max-h-0"
         }`}
       >
@@ -112,7 +112,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-lg px-2 py-2.5 font-display font-medium text-fh-gold transition hover:bg-fh-cream/10"
+                className="block rounded-lg px-3 py-2.5 font-display font-semibold text-white transition hover:bg-fh-cream/10"
               >
                 {t(`nav.${link.id}`)}
               </a>
@@ -133,11 +133,11 @@ export default function Navbar() {
 function LanguageToggle({ lang, setLang, label }) {
   return (
     <div
-      className="flex items-center gap-1 rounded-full bg-fh-cream/10 p-1 ring-1 ring-fh-gold/25"
+      className="flex items-center gap-1 rounded-full border border-fh-gold/30 bg-fh-cream/10 p-1 ring-1 ring-fh-gold/20"
       role="group"
       aria-label={label}
     >
-      <GlobeIcon className="ml-1.5 h-4 w-4 text-fh-gold/70" />
+      <GlobeIcon className="ml-1.5 h-4 w-4 text-white" />
       {[
         { code: "am", short: "አማ" },
         { code: "en", short: "EN" },
@@ -148,10 +148,10 @@ function LanguageToggle({ lang, setLang, label }) {
           lang={code}
           onClick={() => setLang(code)}
           aria-pressed={lang === code}
-          className={`rounded-full px-2.5 py-1 text-xs font-semibold transition ${
+          className={`rounded-full px-2.5 py-1 text-xs font-bold transition ${
             lang === code
-              ? "bg-fh-gold text-fh-deep"
-              : "text-fh-cream/70 hover:text-fh-cream"
+              ? "bg-fh-gold text-fh-deep shadow-xs"
+              : "text-white/70 hover:text-white"
           }`}
         >
           {short}
